@@ -34,6 +34,13 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     color: #fff;
+    display: grid;
+    grid-template: 
+    'menu cabecalho' auto
+    'menu principal' auto
+    / auto 1fr
+    ;
+
 }
 
 /* Cabeçalho */
@@ -45,7 +52,8 @@ body{
     gap: 32px;
     padding: 24px 58px;
     box-shadow: 0 4px 4px #00000029;
-
+    grid-area: cabecalho;
+    max-height: 80px;
 }
 
 .container_foto_perfil{
@@ -75,3 +83,40 @@ body{
     background-color: #95999C;
 }
 
+.barra_lateral{
+    background: #15191C;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    grid-template: menu;
+}
+
+.container_logo{
+    padding: 24px 43px;
+}
+
+.menu_lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_link{
+    display: flex;
+    gap: 16px;
+    align-items: center; 
+    border-left: 8px solid transparent;
+    padding: 16px 0 16px 16px;
+    color: #95999C;
+}
+
+.menu_link.ativo{
+    color: #fff;
+    border-left: 8px solid #fff;
+    padding: 16px 0 16px 16px;
+}
+
+main{
+    grid-area: principal;
+    height: 100vh;
+}
