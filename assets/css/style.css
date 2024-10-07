@@ -36,11 +36,11 @@ body{
     color: #fff;
     display: grid;
     grid-template: 
-    'menu cabecalho' auto
-    'menu principal' auto
+    "menu cabecalho" auto
+    "menu principal" 1fr
     / auto 1fr
     ;
-
+    /* Documentar ideia do auto e 1fr e diferença de grid-area e grid-template */
 }
 
 /* Cabeçalho */
@@ -53,7 +53,6 @@ body{
     padding: 24px 58px;
     box-shadow: 0 4px 4px #00000029;
     grid-area: cabecalho;
-    max-height: 80px;
 }
 
 .container_foto_perfil{
@@ -89,7 +88,7 @@ body{
     flex-direction: column;
     gap: 10px;
     height: 100vh;
-    grid-template: menu;
+    grid-area: menu;
 }
 
 .container_logo{
@@ -118,5 +117,38 @@ body{
 
 main{
     grid-area: principal;
-    height: 100vh;
+    padding: 30px 58px;
+}
+
+.hero{
+    display: grid;
+    gap: 32px 24px;
+    grid-template: 
+    "titulo titulo titulo titulo" auto
+    "card_destaque card_destaque card_destaque videos_recentes" auto
+    / 1fr 1fr 1fr 1fr
+    ;
+}
+
+.hero_titulo{
+    grid-area: titulo;
+    font-size: 1.625rem;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.card.destaque{
+    grid-area: card_destaque;
+}
+
+.card{
+    background: #2C343A;
+    border-radius: 16px;
+}
+
+.card_info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
 }
