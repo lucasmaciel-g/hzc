@@ -134,7 +134,7 @@ main{
     grid-area: titulo;
     font-size: 1.625rem;
     font-weight: bold;
-    line-height: 32px;
+    line-height: 1.2;
 }
 
 .card.destaque{
