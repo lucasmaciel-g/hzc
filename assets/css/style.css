@@ -15,7 +15,7 @@
     font-family: 'icones';
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 a{
@@ -28,9 +28,13 @@ img{
     display: block;
 }
 
+ul{
+    list-style: none;
+}
+
 body{
     background-color: #1d232a;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: #fff;
@@ -122,6 +126,7 @@ main{
 
 .hero{
     display: grid;
+    align-items: start;
     gap: 32px 24px;
     grid-template: 
     "titulo titulo titulo titulo" auto
@@ -134,7 +139,7 @@ main{
     grid-area: titulo;
     font-size: 1.625rem;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 32px;
 }
 
 .card.destaque{
@@ -175,6 +180,7 @@ main{
 
 .card_duracao, .card_visualizacao{
     display: flex;
+    align-items: center;
     gap: 4px;
     color: #95999C;
 }
@@ -188,4 +194,62 @@ main{
     border-radius: 8px;
     grid-column: 1 / -1;
     justify-self: start;
+    line-height: 1.5;
+}
+
+/* Lista de vídeos recentes */
+
+.lista_conteudos{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px 17px;
+    background: #2C343A;
+    padding: 16px 16px 56px 16px;
+    border-radius: 16px;
+}
+
+.titulo_lista{
+    font-size: 1.125rem;
+    font-weight: bold;
+    grid-column: 1;
+    line-height: 1.3;
+}
+
+.link_lista{
+    grid-column: 2;
+    justify-self: end;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #0480DC;
+}
+
+.lista{
+    grid-column: 1 / -1;
+    display: grid;
+    gap: 16px;
+}
+
+.item_lista{
+    display: grid;
+    align-items: start;
+    grid-template-columns: auto 1fr;
+    gap: 0 16px;
+}
+
+.container_capa{
+    grid-row: 1 / 3;
+    padding-top: 6px;
+}
+
+.container_capa img{
+    border-radius: 4px;
+}
+
+.titulo_item, .autor_item{
+    font-size: 0.875rem;
+    line-height: 1.714;
+}
+
+.autor_item{
+    color: #95999C;
 }
