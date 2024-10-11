@@ -1,0 +1,33 @@
+.menu_lateral{
+    background: #15191C;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    grid-area: menu;
+}
+
+.container_logo{
+    padding: 24px 43px;
+}
+
+.menu_lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_link{
+    display: flex;
+    gap: 16px;
+    align-items: center; 
+    border-left: 8px solid transparent;
+    padding: 16px 0 16px 16px;
+    color: #95999C;
+}
+
+.menu_link.ativo{
+    color: #fff;
+    border-left: 8px solid #fff;
+    padding: 16px 0 16px 16px;
+}
+

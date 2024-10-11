@@ -1,0 +1,7 @@
+.hero{
+    grid-template: 
+    "titulo titulo titulo titulo" auto
+    "card_destaque card_destaque card_destaque lista_conteudo" auto
+    / 1fr 1fr 1fr 1fr
+    ;
+}

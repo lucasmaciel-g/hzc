@@ -1,0 +1,12 @@
+.secao{
+    display: grid;
+    align-items: start;
+    gap: 32px 24px;
+}
+
+.secao_titulo{
+    grid-area: titulo;
+    font-size: 1.625rem;
+    font-weight: bold;
+    line-height: 32px;
+}

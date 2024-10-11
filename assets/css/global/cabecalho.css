@@ -1,0 +1,36 @@
+.cabecalho{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 58px;
+    box-shadow: 0 4px 4px #00000029;
+    grid-area: cabecalho;
+}
+
+.container_foto_perfil{
+    width: 32px;
+    height: 32px;
+}
+
+.foto_perfil{
+    border-radius: 50%;
+}
+
+.info_perfil{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nome_perfil{
+    color: #95999C;
+    line-height: 1;
+    font-size: 1.25rem;
+}
+
+.barra_vertical{
+    width: 1px;
+    height: 32px;
+    background-color: #95999C;
+}

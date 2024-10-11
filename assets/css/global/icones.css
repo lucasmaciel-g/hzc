@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'icones';
+    src: url('../../font/icones.ttf');
+}
+
+.icone{
+    font-family: 'icones';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1;
+}

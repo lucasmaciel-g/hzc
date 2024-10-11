@@ -1,0 +1,8 @@
+.videos_mais_vistos{
+    grid-template: 
+    "titulo titulo titulo titulo" auto
+    "card_1 card_2 card_3 card_4" auto
+    "lista_conteudo card_destaque card_destaque card_destaque" auto
+    / 1fr 1fr 1fr 1fr
+    ;
+}

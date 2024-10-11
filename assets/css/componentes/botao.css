@@ -1,0 +1,15 @@
+.card_botao{
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    padding: 10px;
+    background: #0480DC;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+.card_botao.destaque{
+    justify-self: start;
+    grid-column: 1 / -1;
+    gap: 8px;
+    padding: 8px 16px;
+}
