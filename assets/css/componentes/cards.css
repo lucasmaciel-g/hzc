@@ -9,27 +9,31 @@
 
 .card_1{
     grid-area: card_1;
+    max-height: 320px;
 }
 
 .card_2{
     grid-area: card_2;
+    max-height: 320px;
 }
 
 .card_3{
     grid-area: card_3;
+    max-height: 320px;
 }
 
 .card_4{
     grid-area: card_4;
+    max-height: 320px;
 }
 
-.foto_card{
+img.foto_card{
     border-radius: 16px 16px 0 0;
 }
 
 .card_info{
     display: grid;
-    gap: 12px 24px;
+    gap: 8px 24px;
     grid-template-columns: auto 1fr;
     padding: 16px;
 }
@@ -46,10 +50,15 @@
     font-weight: bold;
     grid-column: 1 / -1;
     margin: 0 0 18px 0;
+    max-width: 20ch;
 }
 
 .card_titulo.destaque{
     font-size: 1.625rem;
+    margin: 0;
+}
+
+.card_titulo.tirar_margem{
     margin: 0;
 }
 

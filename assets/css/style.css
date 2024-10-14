@@ -33,3 +33,6 @@
 
 /* Videos mais vistos (seção) */
 @import "./home/videos_mais_vistos.css";
+
+/* Camisas mais recentes (seção) */
+@import "./home/camisas_mais_recentes.css";

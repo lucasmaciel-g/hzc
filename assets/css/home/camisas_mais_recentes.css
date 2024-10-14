@@ -1,0 +1,7 @@
+.camisas_mais_recentes{
+    grid-template: 
+    "titulo titulo titulo titulo" 
+    "card_1 card_2 card_3 card_4"
+    / 1fr 1fr 1fr 1fr
+    ;
+}
